@@ -35,7 +35,8 @@ public class ProductService implements IProductService {
 
     @Override
     public String deleteProduct(Long id) {
-        return "";
+        productRepository.deleteProduct(id);
+        return "product deleted successfully" + id;
     }
 
     @Override

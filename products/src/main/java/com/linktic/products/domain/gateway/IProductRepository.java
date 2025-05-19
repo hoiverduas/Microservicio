@@ -10,7 +10,7 @@ public interface IProductRepository {
     ProductDto createProduct(Product product);
     ProductDto getProductById(Long id);
     ProductDto updateProduct(Product product , Long productId);
-    String deleteProduct(Long id);
+    void deleteProduct(Long id);
     List<ProductDto> getAllProducts();
 
 }

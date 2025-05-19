@@ -56,8 +56,9 @@ public class ProductCrubRepository implements IProductRepository {
     }
 
     @Override
-    public String deleteProduct(Long id) {
-        return "";
+    public void deleteProduct(Long id) {
+        getProductById(id);
+        productCrubRepository.deleteById(id);
     }
 
     @Override
